@@ -10,12 +10,46 @@
 <body>
 
 
-<div id="pageContainer">
-<div id="header"></div>
+<div id="page-container">
+<div id="header">
+  <img src="../src/images/check.svg" class="svg-icon">
+  <h1 class="title">To-Do List</h1>
+</div> 
+
+<div id="sidebar">
+  <div class="home">
+    <h2>Home</h2>
+    <div class="tile">
+      <img src="../src/images/inbox.svg" class="svg-icon-small">
+      <p class="sidebar-name">All Tasks</p>
+    </div>
+    <div class="tile">
+      <img src="../src/images/star.svg" class="svg-icon-small">
+      <p class="sidebar-name">Important</p>
+    </div>
+    <div class="tile">
+      <img src="../src/images/today.svg" class="svg-icon-small">
+      <p class="sidebar-name">Today</p>
+    </div>
+    <div class="tile">
+      <img src="../src/images/week.svg" class="svg-icon-small">
+      <p class="sidebar-name">This Week</p>
+    </div>
+  </div>
+  <div class="projects">
+    <h2>Projects</h2>
+    <div class="add-project">
+      <button id="add-project"><img src="../src/images/plus.svg" class="svg-icon-small"> Add Project</button>
+    </div>
+
+  </div>
+</div>
 
 <div id="content"></div>
 
-<div id="footer"></div>
+<div id="footer">
+  <h6>Copyright © 2023 Reis VanderPol</h6>
+</div>
 </div>
   
 </body>
