@@ -64,10 +64,10 @@ export function displayTasks() {
   nameDiv.classList.add('name-div')
   dateDiv.classList.add('date-div')
   imgDiv.classList.add('img-div')
-  for (let i = 0; i < defaultProject.tasks.length; i++) {
-    newDiv.classList.add('data'+i)
-  }
   newDiv.classList.add('tasks')
+  for (let i = 0; i < taskArray.length; i++) {
+    newDiv.setAttribute('id', i)
+  }
   deleteBtn.classList.add('delete-button')
   editBtn.classList.add('edit-button')
   imgDiv.appendChild(editBtn)
@@ -103,8 +103,6 @@ export function editButton() {
   document.addEventListener('click', () => {
     const target = event.target.closest('.edit-button');
     if (target) {
-      console.log(target)
-      console.log(target.parentElement.parentElement)
       const tasks = target.parentElement.parentElement
       const oldName = tasks.childNodes[0];
       const oldDate = tasks.childNodes[1]
@@ -135,12 +133,12 @@ export function editConfirm() {
       const tasks = target.parentElement.parentElement;
       const nameInput = document.querySelector('.new-name').value;
       const dateInput = document.querySelector('.new-date').value;
-      const taskDiv = document.querySelector('.name-div');
       tasks.childNodes[0].textContent = nameInput;
       tasks.childNodes[1].textContent = dateInput;
-      console.log(taskDiv.textContent)
-      console.log(defaultProject.tasks)
-  
+      defaultProject.tasks[tasks.id].setName(nameInput)
+      defaultProject.tasks[tasks.id].setDate(dateInput)
+      console.log(tasks.id)
+      console.log(defaultProject)
     }
   })
 }
