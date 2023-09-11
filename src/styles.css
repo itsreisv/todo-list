@@ -1,0 +1,278 @@
+body, html {
+  padding:0; margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  padding:0; margin:0;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  background-color: #8aecff;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  height: 5rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.header-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.sidebar {
+  background-color: #3cdfff;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  box-shadow: inset 0px 2px gray;
+  padding: 10px;
+}
+
+.sidebar-button {
+border: none;
+background: none;
+width: 100%;
+height: 2.5rem;
+font-size: 1rem;
+}
+
+.projects-button {
+  border: none;
+  background: none;
+  width: 100%;
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  justify-items: start;
+  align-items: center;
+}
+
+.task-button {
+  border: solid black 1px;
+  background-color: #3cdfff;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  justify-items: start;
+  align-items: center;
+}
+
+.task-button:hover {
+  background-color: #4169e1;
+}
+
+.task-button:active {
+  background-color: #3cdfff;
+}
+
+.projects-button:hover {
+  background-color: #4169e1;
+  border-radius: 5px;
+}
+
+.side-div:hover {
+  background-color: #4169e1;
+  border-radius: 5px;
+}
+
+.sidebar-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.side-div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.general {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  width: 100%;
+  height: 10rem;
+  justify-items: left;
+}
+
+.content {
+  background-color: #d8f9ff;
+  grid-row: 2 / 3;
+  grid-column: 2 / 5;
+  box-shadow: inset 2px 2px gray;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .15fr auto;
+  padding: 10px;
+  gap: 10px;
+}
+
+.footer {
+  background-color: #8aecff;
+  grid-row: 3 / 4 ;
+  grid-column: 1 / 5;
+  height: 2rem;
+  box-shadow: inset 0px 2px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  border-top: solid gray 2px;
+}
+
+.project-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 10px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: -10px;
+  margin-left: 15px;
+}
+
+.dynamic-projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.general-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-modal {
+  width: 20%;
+  height: 16%;
+  border: solid gray 1px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 12rem;
+  right: 38rem;
+  background-color: #8aecff;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.name-input {
+  width: 60%;
+  height: 15%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.date-input {
+  width: 60%;
+  height: 15%;
+  border-radius: 5px;
+  border: none;
+}
+
+.confirm {
+  background: lightgreen;
+  border: solid gray 1px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.confirm:active {
+  background-color: darkgreen;
+}
+
+.tasks {
+  background-color: #3cdfff;
+  width: 95%;
+  height: 5%;
+  border-radius: 10px;
+  border: solid gray 1px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 2fr .5fr .2fr;
+  grid-template-rows: 1fr;
+  padding: 10px;
+}
+
+.img-div > button {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+
+.name-div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.date-div {
+  display:flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.img-div {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.confirm-edit {
+  background-color: lightgreen;
+  border: solid gray 1px;
+  border-radius: 5px;
+  margin-left: 320px;
+}
+

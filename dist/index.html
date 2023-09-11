@@ -3,11 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="main.js"></script>
+  <link rel="stylesheet" href="../src/styles.css">
+  <script src="main.js" defer></script>
   <title>To-Do List</title>
 </head>
 <body>
+
+  <div class="container">
+    <div class="header">
+      <img src="../src/images/cloud.svg" class="header-icon">
+      <h1>To-Do List</h1>
+    </div>
+    <div class="sidebar">
+      <div class="general">
+        <div class="side-div">
+        <button type="button" class="sidebar-button"><img src="../src/images/inbox.svg" class="sidebar-icon">General</button>
+        </div>
+        <div class="side-div">
+        <button type="button" class="sidebar-button"><img src="../src/images/today.svg" class="sidebar-icon">Today</button>
+        </div>
+        <div class="side-div">
+        <button type="button" class="sidebar-button"><img src="../src/images/week.svg" class="sidebar-icon">This Week</button>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="title">
+          <h2>Projects</h2>
+        </div>
+        <div class="dynamic-projects">
+          <button type="button" class="projects-button"><img src="../src/images/plus.svg" class="sidebar-icon">New Project</button>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="general-title">
+        <h1>General Tasks</h1>
+      </div>
+      <div class="task-list">
+        <div class="task-button-div">
+        <button type="button" class="task-button"><img src="../src/images/plus.svg" class="sidebar-icon">New Task</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h5>Copyright © 2023 Reis VanderPol </h5>
+    </div>
+  </div>
+
   
 </body>
 </html>
