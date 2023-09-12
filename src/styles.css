@@ -276,3 +276,25 @@ font-size: 1rem;
   margin-left: 320px;
 }
 
+.project-list {
+  width: 100%;
+  background: none;
+  border: none;
+}
+
+.submit-proj {
+  background-color: lightgreen;
+  background-color: none;
+  border: gray solid 1px;
+  border-left: none;
+}
+
+.proj-name {
+  border-right: none;
+  border: gray solid 1px;
+}
+
+.new-button {
+  background-color: #3cdfff;
+  border: none;
+}
